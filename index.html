@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Earth</title>
+  <!-- Tailwind + DaisyUI CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inter-font bg-green-50 text-gray-800">
+  <!-- NAVBAR -->
+  <header class="z-30 bg-green-700 text-light backdrop-blur">
+    <nav class="container mx-auto px-4 py-3 flex items-center justify-between text-white">
+      
+      <!-- Logo -->
+      <a class="flex items-center gap-2 shrink-0" href="#">
+        <span class="w-10 h-10 rounded-full inline-grid place-items-center">
+          <img src="assets/about.png" alt="logo">
+        </span>
+        <span class="text-lg font-semibold">Green Earth</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center gap-6 text-sm">
+        <li><a class="hover:text-yellow-400" href="#about">About</a></li>
+        <li><a class="hover:text-yellow-400" href="#shop">Gallery</a></li>
+        <li><a class="hover:text-yellow-400" href="#plant">Plant a Tree</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <a href="#plant" class="hidden md:inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-5 rounded-full transition duration-300">
+        Plant a Tree
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+        ☰
+      </button>
+    </nav>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-green-600 text-white px-4 py-4 space-y-3">
+      <a class="block hover:text-yellow-400" href="#about">About</a>
+      <a class="block hover:text-yellow-400" href="#shop">Gallery</a>
+      <a class="block hover:text-yellow-400" href="#plant">Plant a Tree</a>
+      <a href="#plant" class="block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-full transition duration-300">
+        Plant a Tree
+      </a>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
