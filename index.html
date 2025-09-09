@@ -65,5 +65,35 @@
     </div>
   </section>
 
+   <!-- MAIN SHOP AREA -->
+  <main id="shop" class="container mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-[260px_1fr_320px] gap-6">
+    <!-- Categories Sidebar -->
+    <aside>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-base">Categories</h2>
+          <div id="categoryList" class="flex flex-wrap lg:flex-col gap-2"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <section>
+      <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <aside>
+      <div class="card p-4 bg-white  top-[84px] max-h-[calc(100vh-100px)] overflow-hidden">
+        <div class="card-body gap-3 overflow-y-auto">
+            <h2 class="card-title text-base flex items-center justify-between">Your Cart <span id="cartCount" class="badge">0</span></h2>
+          <ul id="cartList" class="space-y-2  bg-green-50"></ul>
+          <div class="divider my-2 "></div>
+          <div class="flex items-center justify-between font-semibold"><span>Total</span><span id="cartTotal">$0</span></div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
   <script src="script.js"></script>
 </body>
