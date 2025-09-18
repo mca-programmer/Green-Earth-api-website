@@ -29,8 +29,7 @@ Green-Earth-api-website/ <br>
 
 🌐 Live
 
-https://mca-programmer.github.io/multi-projects/
-
+https://mca-programmer.github.io/Green-Earth-api-website/
 ### 📄 License
 
 This project is open-source and available under the MIT License
