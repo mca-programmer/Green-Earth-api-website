@@ -25,7 +25,6 @@ Green-Earth-api-website/ <br>
 └── tailwind.config.js ← Tailwind CSS configuration
 
 ---
-.
 
 🌐 Live
 
